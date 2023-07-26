@@ -194,8 +194,9 @@ def eval(which_model, model, valid_loader, best_loss, count, model_name):
 ########################### Test #####################################
 def test(model, test_data_pos, user_pos):
 	top_k = args.top_k
-	model.eval()
-	_, recall, NDCG, _ = evaluate.test_all_users(model, 4096, item_num, test_data_pos, user_pos, top_k)
+	model_1.eval()
+	_, recall, NDCG, _ = evaluate.test_all_users(model_1, 4096, item_num, test_data_pos, user_pos, top_k)
+
 
 	print("################### TEST ######################")
 	print("Recall {:.4f}-{:.4f}-{:.4f}-{:.4f}".format(recall[0], recall[1], recall[2], recall[3]))

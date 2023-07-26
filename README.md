@@ -1,5 +1,10 @@
 # DenoisingRec
 
+2023/7/26, this is based on T-CE.
+We obtain a wandful performance by using Co-teaching model.
+However, I find when I test model using the last training model is the best.
+
+
 
 Adaptive Denoising Training for Recommendation.
 
