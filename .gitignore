@@ -2,3 +2,4 @@ data
 my_data
 T_CE/models
 wandb
+.DS_Store
